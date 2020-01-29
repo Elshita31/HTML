@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>position and overflow</title>
+    <style media="screen">
+.container{
+    width: 50%;
+    height: 200px;
+    overflow: auto;
+    margin-left: 0 auto;
+}
+.static { position: static; border: 2px solid green;}
+.relative{
+    position: relative;
+    border: 2px solid red;
+    left: 20px;
+    bottom: 20px;
+}
+.absolute{ position: absolute; border: 2px solid blue; left: 20px; bottom: 40px; }
+.fixed{ position: afixed; border: 2px solid black; bottom: 0; right: 0;}
+.sticky{
+    position: sticky;
+    border: 2px solid yellow;
+    top: 0;
+    left: 20px;
+    background: darkblue;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <p class="sticky">
+            Ini adlah contoh dari sticky
+        </p>
+        <p class="static">
+            <b>Ini adalah contoh dari static</b> <br>
+            <b>introvert</b> <br>
+            Manusia dengan kepribadian introvert cenderung menutup diri dari dunia luar. Tipe ini lebih banyak menghabiskan 
+            sebagian besar waktu mereka untuk kegiatan soliter, seperti membaca, menulis, menggunakan komputer, serta lebih
+            menyukai berada dalam kesunyian atau tempat tenang. Mereka analitis sebelum berbicara, merasa kurang nyaman karena
+            terlalu banyak pertemuan dan keterlibatan sosial,  lebih senang bekerja sendirian, serta lebih suka berinteraksi 
+            secara 1 on 1 interaction. Keunggulan dari tipe kepribadian
+            ini adalah mereka berpikir dulu sebelum berbicara atau melakukan sesuatu, mereka adalah pendengar yang baik, dan bersikap analitis.
+        </p>
+        <p class="relative">
+            <b>Ini adalah contoh dari position relative</b> <br>
+            <b>Ambivert</b> <br>
+            Ambievert merupakan kepribadian gabungan antara introvert dan ekstrovert. Kelebihan dari tipe ini, mereka 
+            nyaman berada di tengah keramaian dan berbagai aktivitas sosial, tetapi
+            juga rileks dengan kesendirian. Kekurangan dari kepribadian ambievert adalah mereka cenderung moody, 
+            karena sifat yang berubah-ubah.
+        </p>
+        <p class="absolute">
+            <b>Ini adalah contoh dari position absolute</b> <br>
+            <b>Ekstrovert</b> <br>
+            Kebalikan dari introvert, kepribadian ekstrovert cenderung lebih membuka diri terhadap dunia luar. Mereka menyukai keramaian,
+            dengan banyak interaksi dan aktivitas sosial. Tipe kepribadian ini lebih mudah mengungkapkan perasaan melalui kata-kata,
+            mudah bosan dengan kesendirian, dan lebih senang bercerita daripada mendengarkan.
+            Keunggulan dari tipe ekstrovert adalah kepercayaan diri antusiasme yang tinggi, mudah bergaul, aktif, dan dapat berinteraksi
+            dengan banyak orang sekaligus.
+        </p>
+        <p class="fixed">
+            ini contoh position fixed
+        </p>
+    </div>
+</body>
+</html>
